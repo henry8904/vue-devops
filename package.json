@@ -2,9 +2,14 @@
   "name": "vue-devops",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/henry8904/vue-devops",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy":"vue-cli-service build",
+    "deploy":"gh-pages -d dist",
+    "clean":"gh-pages-clean",
+    "lint":"vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -17,6 +22,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/test-utils": "^2.0.0-0",
+    "gh-pages": "^3.2.3",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
   }
